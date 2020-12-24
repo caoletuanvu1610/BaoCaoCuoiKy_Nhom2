@@ -58,7 +58,7 @@
 						$fm = new Format();
 						$get_inbox_cart = $ct -> get_inbox_cart();
 						if ($get_inbox_cart) {
-							//thieu i=0;
+							$i=0;
 							while ($result = $get_inbox_cart->fetch_assoc()) {
 								$i++;
 							
