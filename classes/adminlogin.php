@@ -35,7 +35,7 @@
 				$query = "SELECT * FROM tbl_admin WHERE adminUser = '$adminUser' AND adminPass = '$adminPass' LIMIT 1 ";
 				$result = $this->db->select($query);
 
-				if($result != false){ //cau1 admin
+				if($result != false){
 					//session_start();
 					// $_SESSION['login'] = 1;
 					//$_SESSION['user'] = $user;
