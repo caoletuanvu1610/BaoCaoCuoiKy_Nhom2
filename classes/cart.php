@@ -85,7 +85,7 @@
 		}
 		public function del_product_cart($cartid){
 			$cartid = mysqli_real_escape_string($this->db->link, $cartid);
-			$query = "DELETE FROM carts WHERE cartId = '$cartid'";
+			$query = "DELETE FROM tbl_cart WHERE cartId = '$cartid'";
 			$result = $this->db->delete($query);
 			if($result){
 				header('Location:cart.php');
