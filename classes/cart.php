@@ -35,7 +35,7 @@
 			if($result['product_remain']>$quantity){
 			
 				$query_insert = "INSERT INTO tbl_cart(productId,productName,quantity,sId,price,image) VALUES('$id','$productName','$quantity','$sId','$price','$image' ) ";
-				
+				$insert_cart = $this->db->insert($query_insert);
 				if($result){
 					header('Location:cart.php');
 				}else {
@@ -85,7 +85,7 @@
 		}
 		public function del_product_cart($cartid){
 			$cartid = mysqli_real_escape_string($this->db->link, $cartid);
-			$query = "DELETE FROM tbl_cart WHERE cartId = '$cartid'";
+			$query = "DELETE FROM cart WHERE cartId = '$cartid'";
 			$result = $this->db->delete($query);
 			if($result){
 				header('Location:cart.php');
