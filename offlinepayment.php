@@ -149,7 +149,7 @@
 		    		$id = Session::get('customer_id');
 		    		$get_customers = $cs->show_customers($id);
 		    		if ($get_customers) {
-		    			while ($result = $get_customers->fetchall_assoc()) {
+		    			while ($result = $get_customers->fetch_assoc()) {
 		    			
 		    		 ?>
 		    		<tr>
