@@ -81,7 +81,7 @@
                             if($result['catId']==$result_product['catId'])
                                 { echo 'selected'; }
                              ?>    
-                            value=" <?php echo $result['catId'] ?> "> <?php echo $result['catName'] ?></option>
+                            value=" <?php echo $result['brandId'] ?> "> <?php echo $result['catName'] ?></option>
                             
                             <?php 
                             }
