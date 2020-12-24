@@ -284,7 +284,7 @@
 		}
 		public function del_product($id)
 		{
-			$query = "DELETE FROM tbl_product where productId = '$id' ";
+			$query = "DELETE FROM tbl_product where productId = 'id' ";
 			$result = $this->db->delete($query);
 			if($result){
 				$alert = "<span class='success'>Product Deleted Successfully</span>";
