@@ -97,24 +97,12 @@
                     <td>
                         <select id="select" name="brand">
                             <option>Select Brand</option>
-                            <?php 
-                            $brand = new brand();
-                            $brandlist = $brand->show_brand();
-                            if($brandlist){
-                                while ($result = $brandlist->fetch_assoc()){
-                            
-                             ?>
+                           
                             <option
-                            <?php 
-                            if($result['brandId']==$result_product['brandId'])
-                                { echo 'selected'; }
-                             ?> 
-                             value=" <?php echo $result['brandId'] ?> "> <?php echo $result['brandName'] ?> </option>
                             
-                            <?php 
-                            }
-                             }
-                             ?>
+                             value="  "> <?php echo $result['catName'] ?> </option>
+                            
+                            
                         </select>
                     </td>
                 </tr>

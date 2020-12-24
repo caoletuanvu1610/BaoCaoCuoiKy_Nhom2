@@ -77,7 +77,7 @@
                     </td>
                     <td>
                         <select id="select" name="brand">
-                            <option>Chọn thương hiệu</option>
+                            <option>Chọn </option>
                             <?php 
                             $brand = new brand();
                             $brandlist = $brand->show_brand();
