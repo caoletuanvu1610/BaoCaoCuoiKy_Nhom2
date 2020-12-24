@@ -41,7 +41,7 @@
 								<td><?php echo $result['price'] ?></td>
 								
 								<td>
-									<a href="?proid">Xóa</a> ||
+									<a href="?proid=<?php echo $result['productId'] ?>">Xóa</a> ||
 									<a href="details.php?proid=<?php echo $result['productId'] ?>">Mua Ngay</a>
 								</td>
 							</tr>
