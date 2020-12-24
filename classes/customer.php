@@ -62,9 +62,9 @@
 			}else{
 				$check_login = "SELECT * FROM tbl_customer WHERE email='$email' AND password='$password' ";
 				$result_check = $this->db->select($check_login);
-				if ($result_check) {
+				if ($result_check != false) {
 					$value = $result_check->fetch_assoc();
-					Session::set('customer_login', false);// true -> false
+					Session::set('customer_login', true);
 					Session::set('customer_id', $value['id']);
 					Session::set('customer_name', $value['name']);
 					header('Location:order.php');
@@ -80,7 +80,7 @@
 			$result = $this->db->select($query);
 			return $result;
 		}
-		public function update_customers( $id) //($data, $id)
+		public function update_customers($data, $id)
 		{
 			$name = mysqli_real_escape_string($this->db->link, $data['name']);
 			$zipcode = mysqli_real_escape_string($this->db->link, $data['zipcode']);
