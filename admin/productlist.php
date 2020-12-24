@@ -84,7 +84,7 @@
 
 					?></td>
 					
-					<td><a href="productedit.php?productid=<?php echo $result['productId'] ?>">Edit</a> || <a href="?productid=<?php echo $result['productId'] ?>">Delete</a></td>
+					<td><a href="productedit.php?productid">Edit</a> || <a href="?productid=<?php echo $result['productId'] ?>">Delete</a></td>
 				</tr>
 				<?php
 							
